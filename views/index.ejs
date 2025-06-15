@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Location Tracker</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h1 style="text-align: center;">🚶‍♂️ Live Location Tracker</h1>
+  <div style="text-align: center; margin: 10px;">
+    <button id="startBtn">Start Tracking</button>
+    <span id="status">Not Tracking</span>
+  </div>
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+
+  <!-- Socket.IO -->
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+
+  <!-- Your Script -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
